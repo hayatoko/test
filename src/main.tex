@@ -1,0 +1,55 @@
+\documentclass{ltjsarticle}
+%----------------Load packages---------------------
+
+\usepackage{amsmath,amsthm,amssymb}
+% \usepackage{unicode-math}
+% \setmathfont{Latin Modern Math}
+
+\usepackage{graphicx, color}
+
+\usepackage[style=alphabetic,backend=biber]{biblatex}
+\addbibresource{ref.bib}  % .bib ファイルを指定
+
+\renewcommand{\emph}{\textbf}
+%----------------Define theorem environments---------------------
+
+\theoremstyle{definition}
+\newtheorem{prop}{Proposition}[section]
+\newtheorem*{prop*}{Proposition}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem*{thm*}{Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{dfn}[prop]{Definition}
+\newtheorem{exm}[prop]{Example}
+\newtheorem{rem}[prop]{Remark}
+
+%-----------------------------------------------
+
+\begin{document}
+
+%----------------Title and Author---------------------
+\title{ドクワキ！ピタゴラの定理}
+\author{小松, 藤吉, 薄井}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+%----------------Abstract---------------------
+\begin{abstract}
+    ピタゴラの定理を紹介します.
+\end{abstract}
+
+%----------------Main text---------------------
+\section{はじめに}
+ピタゴラの定理は, 直角三角形の辺の長さの関係を表す有名な定理です.
+本稿では, ピタゴラの定理を紹介し, その証明を示します.
+
+\section{ピタゴラの定理}
+\begin{thm}[ピタゴラの定理]
+    直角三角形において, 斜辺の長さの二乗は, 他の二辺の長さの二乗の和に等しい.
+    すなわち, 直角三角形の辺の長さをそれぞれ $a$, $b$, $c$ とするとき, 以下の関係が成り立つ:
+    \[
+        c^2 = a^2 + b^2
+    \]
+\end{thm}
